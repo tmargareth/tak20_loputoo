@@ -1,15 +1,6 @@
 <!-- API -->
 <?php
 require 'settings.php';
-// Hetke ilma andmed
-$response = CallAPI("GET", "https://api.openweathermap.org/data/2.5/weather?lat=58.924888&lon=24.868806&appid=ff6bb9d23ceac641e4f65a6e9e2ad531&units=metric", null);
-//echo $response;
-$response = json_decode($response);
-
-// Järgmise päeva ennustus
-$response2 = CallAPI("GET", "https://api.openweathermap.org/data/2.5/forecast?lat=58.924888&lon=24.868806&appid=ff6bb9d23ceac641e4f65a6e9e2ad531&units=metric", null);
-//echo $response;
-$response2 = json_decode($response2)
 ?>
 
 <!-- Veebisait -->

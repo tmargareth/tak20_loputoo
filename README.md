@@ -11,6 +11,6 @@ Veebileht on paigaldatud avalikku serverisse, link: https://margareth.kehtnakhk.
 Infot loetakse andmebaasist ja veebist. 
 MySQL fail ilm_ds18_out_east.sql on ida poolne tabel (suurus on ~20MB).
 MySQL fail ilm_ds18_out_west.sql on lääne poolne tabel (suurus on ~31MB).
-Failist settings.php on eemaldatud delikaatsed andmed (USERNAME, PASSWORD, DBNAME).
+Failist settings.php on eemaldatud delikaatsed andmed (USERNAME, PASSWORD, DBNAME ning ka API võti ridadelt 32 ja 37).
 Veebisait on loodud 800x480 px resolutsiooniga ekraanile.
 

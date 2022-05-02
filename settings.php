@@ -3,9 +3,9 @@
 // Andmebaasiga ühenduse saamiseks on vaja alati config fail kirjutada /** */
 
 define("HOST", "localhost");   // konstandi nimi (trükitähtedega), enda väljamõeldud - ei saa muuta, peale koma talle antud väärtus - hetkel string
-define("USERNAME", "margarethtamm"); // kasutajanimi antud keskkonnas;  kopeeri rida - Alt + Shift + nool
-define("PASSWORD", "Meek00k");   // kasutajanimi antud keskkonnas ja järgmine parool
-define("DBNAME", "margarethtamm_loputoo"); // andmebaasi nimi, vaata, et oleks sama ka .sql failides
+define("USERNAME", "username"); // kasutajanimi antud keskkonnas;  kopeeri rida - Alt + Shift + nool
+define("PASSWORD", "password");   // kasutajanimi antud keskkonnas ja järgmine parool
+define("DBNAME", "dbname"); // andmebaasi nimi, vaata, et oleks sama ka .sql failides
 
 $dsn = "mysql:host=".HOST.";dbname=".DBNAME; // muutuja; ühenduse jaoks, enda väljamõeldud, . jätkamiseks
 $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION); // vigade kinni püüdmiseks; PDO - klass php-s

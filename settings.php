@@ -28,6 +28,18 @@ function show($array) {
 
 <!----------------------------------------------- API -------------------------------------------->
 <?php
+// Hetke ilma andmed
+$response = CallAPI("GET", "https://api.openweathermap.org/data/2.5/weather?lat=58.924888&lon=24.868806&appid=[ENTER YOUR KEY HERE]&units=metric", null);
+//echo $response;
+$response = json_decode($response);
+
+// Järgmise päeva ennustus
+$response2 = CallAPI("GET", "https://api.openweathermap.org/data/2.5/forecast?lat=58.924888&lon=24.868806&appid=[ENTER YOUR KEY HERE]&units=metric", null);
+//echo $response;
+$response2 = json_decode($response2)
+?>
+
+<?php
 function CallAPI($method, $url, $data)
 {
     $curl = curl_init();
